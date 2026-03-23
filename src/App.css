@@ -4,19 +4,39 @@ html, body {
   
 }
 
-
 .navbar {
   background: rgb(247, 213, 168);
   border-bottom: 1px solid #e5e7eb;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+  left: 0;
+  width: 100%;
+  
+}
+
+.home__image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 400px;
   
 }
 
 .navbar-large {
-  height: 5000px;
+  height: 300px;
+}
+
+
+.navbar-medium {
+  height: 200px;
+}
+
+
+.navbar-small {
+  height: 100px;
 }
 
 .navbar__container {

@@ -15,18 +15,38 @@ function App() {
   
   return (
     <>
-     <Navbar />
+     
        <ScrollToTop />  
       <Routes>
-      <Route path= "/" element= { <Layout navbarHeight="large">
+      <Route path= "/" element= {<Layout navbarHeight="large">
         <Home />
       </Layout>
     } 
   />
-      <Route path= "/services" element={<Services />} />
-      <Route path= "/contact" element={<Contact />} />
-      <Route path= "/gallery" element={<Gallery />} />
-      <Route path="/privacy" element={<Privacy />} />
+     <Route path="/services" element={<Layout navbarHeight="small">
+        <Services />
+      </Layout>
+    } 
+  />
+      <Route path= "/contact" element={
+      <Layout navbarHeight="medium">
+        <Contact />
+      </Layout>
+    } 
+  />
+      <Route path= "/gallery" element={
+      <Layout navbarHeight="medium">
+        <Gallery />
+      </Layout>
+    } 
+  />
+      <Route path="/privacy" element={
+      <Layout navbarHeight="medium">
+        <Privacy />
+      </Layout>
+    } 
+  />
+
       </Routes>
       <Footer/>
     </>

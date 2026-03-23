@@ -1,5 +1,7 @@
 
-function Layout({navbarHeight, children}){
+import Navbar from "./Navbar";
+
+export default function Layout ({navbarHeight, children}){
 
     return (
         <>

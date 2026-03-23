@@ -1,6 +1,5 @@
 export default function Service(){
-    return(
-        
+    return(  
         <div>
             <h1>AB Joinery</h1>
         </div>

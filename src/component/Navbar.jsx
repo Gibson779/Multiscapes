@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 
-export default function Navbar({hiight}) {
+export default function Navbar({height}) {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -13,10 +13,8 @@ export default function Navbar({hiight}) {
     <>
 
     <div className={`navbar navbar-${height}`}>
-        Navbar
-
-    </div>
-    <header className="navbar">
+    
+    
       <div className="navbar__container">
 
         {/* Logo / Brand */}
@@ -43,8 +41,8 @@ export default function Navbar({hiight}) {
           <span></span>
         </button>
 
-         </div>
-    </header>
+      </div>
+    </div>
 
     </>
   );
