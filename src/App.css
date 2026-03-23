@@ -1,0 +1,159 @@
+html, body {
+    margin: 0;
+    background-color: white;
+  
+}
+
+
+.navbar {
+  background: rgb(247, 213, 168);
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+  
+}
+
+.navbar-large {
+  height: 5000px;
+}
+
+.navbar__container {
+  max-width: 1200px;
+  height: 110px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+/* ==========================
+   LOGO
+========================== */
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  
+}
+
+.navbar__logo img {
+  margin-top: 200px;
+  height:  150px;
+  width: 150px;
+  object-fit: contain;
+}
+
+
+/* ==========================
+   MENU (DESKTOP)
+========================== */
+
+.navbar__menu {
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+}
+
+.navbar__menu a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar__menu a:hover {
+  color: black
+}
+
+.navbar__menu.open{
+   position: fixed;   /* keeps it at the top of the screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* ==========================
+   HAMBURGER
+========================== */
+
+.navbar__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar__hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #374151;
+  transition: all 0.3s ease;
+}
+
+/* ==========================
+   MOBILE MENU
+========================== */
+
+@media (max-width: 768px) {
+  .navbar__menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    transform: translateY(-120%);
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar{
+    padding-top: 20px;
+  }
+
+
+  .navbar__menu.open {
+    transform: translateY(0);
+  }
+
+  .navbar__hamburger {
+    display: flex;
+  }
+}
+
+/* ==========================
+   HAMBURGER ANIMATION
+========================== */
+
+.navbar__hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar__hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar__hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+
+
+
+.footer__line{
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 80%;
+  margin: 20px auto;
+}
