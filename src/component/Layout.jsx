@@ -1,11 +1,11 @@
 
 import Navbar from "./Navbar";
 
-export default function Layout ({navbarHeight, children}){
+export default function Layout ({navbarHeight,showHomeImage, children}){
 
     return (
         <>
-        <Navbar height= {navbarHeight}/>
+        <Navbar height= {navbarHeight} showHomeImage={showHomeImage}/>
         {children}
         </>
 

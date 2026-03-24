@@ -9,7 +9,7 @@ import Home from "./route/Home";
 import ScrollToTop from "./component/ScrollToTop.jsx";
 import Privacy from "./route/Privacy.jsx";
 import Layout from "./component/Layout.jsx";
-
+import Hero from "./component/Hero.jsx";
 
 function App() {
   
@@ -18,7 +18,8 @@ function App() {
      
        <ScrollToTop />  
       <Routes>
-      <Route path= "/" element= {<Layout navbarHeight="large">
+      <Route path= "/" element= {<Layout navbarHeight="large" showHomeImage={true}>
+         <Hero />
         <Home />
       </Layout>
     } 
@@ -29,13 +30,13 @@ function App() {
     } 
   />
       <Route path= "/contact" element={
-      <Layout navbarHeight="medium">
+      <Layout navbarHeight="small">
         <Contact />
       </Layout>
     } 
   />
       <Route path= "/gallery" element={
-      <Layout navbarHeight="medium">
+      <Layout navbarHeight="small">
         <Gallery />
       </Layout>
     } 

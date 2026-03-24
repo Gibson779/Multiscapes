@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 
-export default function Navbar({height}) {
+export default function Navbar({height, showHomeImage}) {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -12,7 +12,7 @@ export default function Navbar({height}) {
 
     <>
 
-    <div className={`navbar navbar-${height}`}>
+    <div className={`navbar navbar-${height }`}>
     
     
       <div className="navbar__container">
@@ -21,6 +21,8 @@ export default function Navbar({height}) {
         <Link to="/" className="navbar__logo" onClick={closeMenu}>
           <img  src="/images/image.jpg" alt="" />
         </Link>
+
+       
 
         {/* Navigation Links */}
         <nav className={`navbar__menu ${menuOpen ? "open" : ""}`}>
