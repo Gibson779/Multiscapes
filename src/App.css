@@ -227,6 +227,7 @@ html, body {
   gap: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-top: 150px;
   
 }
 
@@ -365,11 +366,12 @@ html, body {
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
-  gap: 40px;
+  gap: 80px;
 }
 
 .about__text {
   flex: 1;
+  margin-right: 80px;
   
 }
 
@@ -401,6 +403,9 @@ html, body {
 
   .about__header {
     font-size: 28px;
+  }
+  .about__text{
+    margin: 0;
   }
 
   .about__text p {
