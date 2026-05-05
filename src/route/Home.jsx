@@ -16,6 +16,8 @@ export default function Home(){
         </div>
 
         <img src="./images/garden shed.jpg" alt="About" className="about__image" />
+     
+        
        </div>
        </section>
 

@@ -12,7 +12,7 @@ export default function Navbar({height, showHomeImage}) {
 
     <>
 
-    <div className={`navbar navbar-${height }`}>
+    <div className={`navbar `}>
     
     
       <div className="navbar__container">
