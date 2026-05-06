@@ -1,16 +1,57 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🪵 Joinery React App
 
-Currently, two official plugins are available:
+A modern web application for showcasing and managing joinery services, built with **React** on the frontend. This app is ideal for carpenters, joiners, or woodworking businesses who want to display their work, attract clients, and manage project inquiries.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 🛠️ Showcase joinery projects (e.g. furniture, doors, cabinets)
+* 🖼️ Image gallery of completed work
+* 📄 Service listings (custom builds, repairs, installations)
+* 📬 Contact form for customer inquiries
+* 📱 Fully responsive design
+* ⚡ Fast and interactive UI with React
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧰 Tech Stack
+
+**Frontend:**
+
+* React
+* HTML5 & CSS
+
+
+**Integrations:**
+
+* Firebase (for backend/database)
+* Email services EmailJS for contact forms
+* Hosting Netlify
+
+---
+
+### 2. Run it
+
+https://abjoinerydemo.netlify.app/
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 📬 Contact
+
+For questions or feedback, please open an issue on GitHub.
+
+---
+
+## 💡 Notes
+
+This project can be easily extended into a full business website with backend integration for managing clients, orders, and inventory.
+
+---
