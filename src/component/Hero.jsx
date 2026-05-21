@@ -2,19 +2,19 @@ export default function Hero() {
   return (
     <section className="hero">
       <img 
-        src="/images/stairs.jpg" 
+        src="/images/stock2.jpg" 
         alt="Home banner"
         className="hero__bg"
       />
 
       <div className="hero__content">
         <h1>
-          Transforming Spaces with Bespoke <br />
-          Joinery Solutions
+          Transforming Spaces With Detailed <br />
+          Landscapes
         </h1>
 
         <p>
-          Crafting unique and functional bespoke furniture and cabinetry solutions
+          Creating your dream gardens with qualty attention to detial
         </p>
       </div>
     </section>

@@ -19,8 +19,9 @@ export default function Navbar({height, showHomeImage}) {
 
         {/* Logo / Brand */}
         <Link to="/" className="navbar__logo" onClick={closeMenu}>
-          <img  src="/images/image.jpg" alt="" />
+          <img  src="/images/logoNew.jpg" alt="" />
         </Link>
+        <h1 className="heading">Multiscapes</h1>
 
        
 

@@ -2,14 +2,21 @@ import React, { useState, useEffect } from "react";
 
 
 const images = [
-  "../images/door.jpg",
-  "../images/bedroom doors.jpg",
-  "../images/garden fencing.jpg",
-  "../images/gate.jpg",
-  "../images/paneling.jpg",
-  "../images/stairs.jpg",
-  "../images/van.jpg",
-  "../images/small garden gate.jpg",
+  "../images/bbq set up.jpg",
+  "../images/drive way 3.jpg",
+  "../images/bbq.jpg",
+  "../images/Fencing job.jpg",
+  "../images/Drive way.jpg",
+  "../images/Garden reno.jpg",
+  "../images/Sleepers.jpg",
+    "../images/spar.jpg",
+    "../images/garden reno 2.jpg",
+   "../images/Large Drive Way.jpg",
+   "../images/Garden job.jpg",
+    "../images/detail.jpg",
+
+ 
+
 
    
 ];

@@ -1,16 +1,16 @@
 export default [
     {
         id: 1,
-        name: "Doors",
-        image: "../images/door.jpg",
+        name: "Fences",
+        image: "../images/Fencing job.jpg",
         date: "",
         text: "",
     },
     {
 
      id: 1,
-        name: "Fencing",
-        image: "../images/garden fencing.jpg",
+        name: "Landscaping",
+        image: "../images/Garden reno.jpg",
         date: "",
         text: ""
     },
@@ -18,8 +18,8 @@ export default [
     {
 
      id: 1,
-        name: "Shed",
-        image: "../images/garden shed.jpg",
+        name: "Drive Ways",
+        image: "../images/Drive way.jpg",
         date: "",
         text: ""
     },
@@ -27,8 +27,8 @@ export default [
     {
 
      id: 1,
-        name: "Gate",
-        image: "../images/gate.jpg",
+        name: "Sleepers",
+        image: "../images/Sleepers.jpg",
         date: "",
         text: ''
     },
@@ -36,8 +36,8 @@ export default [
     {
 
      id: 1,
-        name: "Paneling",
-        image: "../images/paneling.jpg",
+        name: "Turf",
+        image: "../images/garden reno 2.jpg",
         date: "",
         text: ""
     },
@@ -45,8 +45,8 @@ export default [
     {
 
      id: 1,
-        name: "Outdoor Gate",
-        image: "../images/small garden gate.jpg",
+        name: "Outdoor Kitchen",
+        image: "../images/bbq set up.jpg",
         date: "",
         text: ""
     },

@@ -15,16 +15,16 @@ export default function Footer(){
         src="./images/facebook.png" 
         alt="facebook" 
         className='facebook__image'
-         onClick={() => window.location.href='https://www.facebook.com/profile.php?id=61560961289345&locale=en_GB'} />
+         onClick={() => window.location.href='https://www.facebook.com/Multiscapeltd'} />
         <img 
         src="./images/instagram.png" 
         alt="instagram" 
         className='instagram__image' 
-        onClick={() => window.location.href='https://www.instagram.com/ab__joinery/?hl=en'} 
+        onClick={() => window.location.href='https://www.instagram.com/multiscapeltd/'} 
         />
 
         <p className="footer__copyright">
-          © {new Date().getFullYear()} AB Joinery. All rights reserved.
+          © {new Date().getFullYear()}  All rights reserved.
           <Link to="/privacy">
         <li className="privacy__link"> Privacy Policy</li>
         </Link>

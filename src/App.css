@@ -1,46 +1,30 @@
 html, body {
     margin: 0;
     background-color: white;
-
-  
 }
-
 
 
 .hero {
-  
   position: relative;
-  height: 900px;     
-  
+  height: 400px;     
   overflow: hidden;
-  
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  z-index: 1;
-}
 
 .hero__bg {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 90%;
-  height: 90%;
-  transform: translate(-50%, -50%);
+   width: 100%;
+  height: 500px;
   object-fit: cover;
-  object-position: center;
   z-index: 0;
-  border: 100px solid rgba(206, 179, 113, 0.915);
-  
 }
 
 
+/* ==========================
+   Navbar
+========================== */
 .navbar {
-   background: rgb(160, 140, 90);
+  background: rgb(255, 255, 255);
   position: relative;
   top: 0;
   left: 0;
@@ -68,7 +52,7 @@ html, body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 20px;
   
 }
@@ -94,6 +78,17 @@ html, body {
   height: 100px;
 }
 
+
+/* ========================
+   Heading
+========================== */
+
+.heading{
+  font-size: 38px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: #5c898b;
+}
 
 
 /* ==========================
@@ -128,7 +123,7 @@ html, body {
 
 .navbar__menu a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #5c898b;
   font-weight: 500;
   transition: color 0.2s ease;
 }
@@ -358,6 +353,10 @@ html, body {
 }
 
 
+/* ==========================
+   Home
+========================== */
+
 
 .about {
   padding: 60px 20px;
@@ -420,6 +419,78 @@ html, body {
 }
 
 
+.why_us{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+
+.whyus_text{
+  width: 1000px;
+  text-align: center;
+}
+
+.whyus_header {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.recent_header{
+text-align: center;
+}
+
+.get_intouch{
+
+}
+
+.intouch_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 40px;
+
+}
+
+.contact_text{
+  text-align: center;
+}
+
+
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  
+}
+
+
+.contact_btn{
+ background-color: #5c898b;
+  color: white;
+  padding: 30px 50px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px;
+  
+}
+
+
+.call_btn{
+  background-color: #5c898b;
+  color: white;
+  padding: 30px 50px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px;
+  
+}
 
 
 /* ==========================
