@@ -1,57 +1,44 @@
 
-# 🪵 Joinery React App
+# 🪵 Multiscapes
 
-A modern web application for showcasing and managing joinery services, built with **React** on the frontend. This app is ideal for carpenters, joiners, or woodworking businesses who want to display their work, attract clients, and manage project inquiries.
+Landscaping Website
 
----
+A modern responsive landscaping business website built with React.
+Includes service pages, contact section, call buttons, and mobile-friendly layouts.
 
-## 🚀 Features
-
-* 🛠️ Showcase joinery projects (e.g. furniture, doors, cabinets)
-* 🖼️ Image gallery of completed work
-* 📄 Service listings (custom builds, repairs, installations)
-* 📬 Contact form for customer inquiries
-* 📱 Fully responsive design
-* ⚡ Fast and interactive UI with React
-
----
-
-## 🧰 Tech Stack
-
-**Frontend:**
-
-* React
-* HTML5 & CSS
+Features
+Responsive design
+Contact page
+Click-to-call support
+Service sections
+Mobile navigation
+Flexbox layouts
+React Router navigation
+Technologies Used
+React
+React Router
+CSS3
+Flexbox
+JavaScript
+Installation
 
 
-**Integrations:**
+The website uses Flexbox and media queries to ensure compatibility across:
 
-* Firebase (for backend/database)
-* Email services EmailJS for contact forms
-* Hosting Netlify
+Mobile devices
+Tablets
+Desktop screens
+Future Improvements
+Online quote form
+Gallery section
+Testimonials
+SEO optimisation
+Dark mode
+CMS integration
+Contact
 
----
 
-### 2. Run it
 
-https://abjoinerydemo.netlify.app/
-
----
-
-## 📄 License
+License
 
 This project is licensed under the MIT License.
-
----
-
-## 📬 Contact
-
-For questions or feedback, please open an issue on GitHub.
-
----
-
-## 💡 Notes
-
-This project can be easily extended into a full business website with backend integration for managing clients, orders, and inventory.
-
----
