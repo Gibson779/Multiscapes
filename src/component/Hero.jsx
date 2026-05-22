@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="hero">
       <img 
-        src="/images/stock2.jpg" 
+        src="/images/home.jpg" 
         alt="Home banner"
         className="hero__bg"
       />

@@ -24,7 +24,7 @@ export default function Footer(){
         />
 
         <p className="footer__copyright">
-          © {new Date().getFullYear()} Multiscapes LTD All rights reserved.
+          © {new Date().getFullYear()} Multiscapes LTDfooter__image All rights reserved.
           <Link to="/privacy">
         <li className="privacy__link"> Privacy Policy</li>
         </Link>
