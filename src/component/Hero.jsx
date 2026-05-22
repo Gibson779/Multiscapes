@@ -8,7 +8,7 @@ export default function Hero() {
       />
 
       <div className="hero__content">
-        <h1>
+        <h1 className="hero_title">
           Transforming Spaces With Detailed <br />
           Landscapes
         </h1>

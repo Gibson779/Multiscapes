@@ -47,7 +47,7 @@ export default function Home(){
 
        <section className="get_intouch">
         <div className="intouch_container">
-              <h1>CONTACT US TODAY</h1>
+              <h1 className="contact_header">CONTACT US TODAY</h1>
               <p className="contact_text">Get in touch with our friendly team today for professional driveway and landscaping services across Greater Manchester. Whether you’re planning a new driveway, patio installation, garden transformation, or exterior cleaning service, we’re here to help with expert advice and free no-obligation quotes.</p>
              </div>
                </section>
@@ -56,12 +56,13 @@ export default function Home(){
                 <div className="link">
                 <Link to="/contact">
               <button className="contact_btn">Contact US</button>
-               <a href="tel:030438303">
+              </Link>
+
+                <a href="tel:030438303">
                <button className="call_btn">Call (num)</button>
-               </a>
-               </Link>
+                </a>
                </div>
-              </div>
+               </div>
              
      
 
