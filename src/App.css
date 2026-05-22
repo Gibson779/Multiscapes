@@ -51,7 +51,7 @@ html, body {
   align-items: center;
   text-align: center;
   color: rgb(0, 0, 0);
-  padding: 20px 160px 0 0;
+  padding: 20px 140px 0 50px;
   
   
 }
@@ -576,9 +576,10 @@ padding: 0 20px 30px 20px;
 
 
 
-/* ==========================
-   MOBILE MENU
-========================== */
+/* ----------------------------------
+   MEDIA QUERIES (MOBILE + TABLET)
+---------------------------------- */
+
 
 @media (max-width: 768px) {
   .navbar__menu {
@@ -615,12 +616,6 @@ padding: 0 20px 30px 20px;
   }
 
 }
-
-
-
-/* ----------------------------------
-   MEDIA QUERIES (MOBILE + TABLET)
----------------------------------- */
 
 
 @media (max-width: 900px) {
@@ -750,8 +745,6 @@ padding: 0 20px 30px 20px;
     flex-direction: column;
   }
 }
-
-
 
 
 @media (max-width: 600px) {
