@@ -37,7 +37,7 @@ export default [
 
      id: 1,
         name: "Turf",
-        image: "../images/garden reno 2.jpg",
+        image: "../images/Garden job.jpg",
         date: "",
         text: ""
     },
