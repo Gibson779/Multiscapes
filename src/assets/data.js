@@ -46,7 +46,7 @@ export default [
 
      id: 1,
         name: "Outdoor Kitchen",
-        image: "../images/bbq set up.jpg",
+        image: "../images/bbq.jpg",
         date: "",
         text: ""
     },
