@@ -1,10 +1,23 @@
 import data from "../assets/data"
 import Service from "../component/Service"
+import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Home(){
     return(
         <>
+
+        <section className="certification">
+       
+      <div className="hero__trust">
+       <span>✓ Free Site Visits</span>
+       <span>✓ Quality Guaranteed</span>
+       <span>✓ Fully Insured</span>
+     </div>
+
+      
+       </section>
+
      
        <section className="about">
        <div className="about__container">
@@ -20,18 +33,10 @@ export default function Home(){
 
         <img src="../images/garden reno 2.jpg" alt="About" className="about__image" />
         
-     
-        
        </div>
        </section>
 
-       <section className="why_us">
-        <h1 className="whyus_header">WHY CHOSE US</h1>
-        <p className="whyus_text">We specialists in all aspects of hard & soft domestic landscape design, construction & maintenance around Greater Manchester, delivering high-quality outdoor transformations with exceptional attention to detail. We help homeowners create functional, attractive outdoor spaces tailored to their property and lifestyle.
-                                  Our services include new driveway installations, block paving, patios, turfing, fencing, garden landscaping. From complete garden makeovers to smaller exterior improvements, every project is completed to a high standard. A strong focus on quality finishes that are built to last.
-                                  With free quotes, home surveys, and a commitment to customer satisfaction, we pride ourselves on delivering reliable service, expert craftsmanship, and professional results from start to finish.</p>
-       </section>
-
+       
        <section className="recent_work">
         <h1 className="recent_header">RECENT WORK</h1>
          
@@ -43,6 +48,14 @@ export default function Home(){
                 />
               ))}
                </div>
+       </section>
+
+
+       <section className="why_us">
+        <h1 className="whyus_header">WHY CHOSE US</h1>
+        <p className="whyus_text">We specialists in all aspects of hard & soft domestic landscape design, construction & maintenance around Greater Manchester, delivering high-quality outdoor transformations with exceptional attention to detail. We help homeowners create functional, attractive outdoor spaces tailored to their property and lifestyle.
+                                  Our services include new driveway installations, block paving, patios, turfing, fencing, garden landscaping. From complete garden makeovers to smaller exterior improvements, every project is completed to a high standard. A strong focus on quality finishes that are built to last.
+                                  With free quotes, home surveys, and a commitment to customer satisfaction, we pride ourselves on delivering reliable service, expert craftsmanship, and professional results from start to finish.</p>
        </section>
 
        <section className="get_intouch">
@@ -62,13 +75,18 @@ export default function Home(){
                <button className="call_btn">Call (num)</button>
                 </a>
                </div>
+                  <a
+                    href="https://wa.me/447123456789"
+                    className="whatsapp-float"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    
+                  >
+                    <FaWhatsapp />
+                    <span>How Can We Help?</span>
+                  </a>
+
                </div>
-             
-     
-
-
-
-
 
            </>
     )

@@ -21,7 +21,7 @@ export default function Navbar({height, showHomeImage}) {
         <Link to="/" className="navbar__logo" onClick={closeMenu}>
           <img  src="/images/logoNew.jpg" alt="" />
         </Link>
-        <h1 className="heading">Multiscapes</h1>
+        <h1 className="heading"></h1>
 
        
 
@@ -31,8 +31,10 @@ export default function Navbar({height, showHomeImage}) {
           <Link to="/services" onClick={closeMenu}>Services</Link>
            <Link to="/gallery" onClick={closeMenu}>Gallery</Link>
              <Link to="/contact" onClick={closeMenu}>Contact</Link>
+              <a className="call_nav" href="tel:030438303" onClick={closeMenu}>Call - 0145323456</a>
         </nav>
 
+      
         {/* Hamburger */}
         <button
           className={`navbar__hamburger ${menuOpen ? "open" : ""}`}

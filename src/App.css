@@ -8,7 +8,6 @@ html, body {
 ========================== */
 .navbar {
   background: rgb(255, 255, 255);
-  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -36,122 +35,158 @@ html, body {
   height: 100px;
 }
 
+.call_nav{
+  
+}
 
 /* ==========================
    Hero
 ========================== */
+.hero_title{
+  font-size: 100px;
+  margin: 20px;
+}
+
 
 
 .hero__content {
-  position: relative;
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   text-align: center;
-  color: rgb(255, 255, 255);
-  padding: 50px 140px 0 50px;
-  
-  
-  
+  color: white;
 }
-
-.hero__content h1 {
-  font-size: 40px;
-  font-weight: 400;
-  margin: 0;
-  
-  flex: 1;
-  max-width: 700px;
-   
-
-  
-}
-
-.hero__content p {
-  font-size: 20px;
-  max-width: 700px;
-  margin: 0;
-}
-
 
 .hero {
   position: relative;
-  height: 600px;     
+  height: 700px;
   overflow: hidden;
-  
-  
+  z-index: 1;
+}
+
+.hero__slider {
+  position: absolute;
+  inset: 0;
+   z-index: 1;
 }
 
 .hero__bg {
-  position: absolute;
   width: 100%;
-  height: 100%;
+  height: 700px;
   object-fit: cover;
-  z-index: 0;
-   
 }
 
-.cta-buttons{
-   display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 2;
 }
+
+.hero__tag {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.hero__subtitle {
+  max-width: 650px;
+  margin: 25px auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+.cta-buttons a {
+  text-decoration: none;
+  padding: 0.9rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
 
 .btn {
-  display: inline-block;
-  padding: 14px 26px;
-  font-size: 16px;
-  font-weight: 600;
+  padding: 15px 35px;
+  border-radius: 50px;
   text-decoration: none;
-  border-radius: 8px;
-  transition: all 0.25s ease;
-  text-align: center;
-  cursor: pointer;
-  min-width: 180px;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
-/* Primary CTA: Get a Free Quote */
+/* Orange button */
 .btn-primary {
-  background: #1e73ff;
-  color: #fff;
-  border: 2px solid #1e73ff;
-  box-shadow: 0 6px 18px rgba(30, 115, 255, 0.25);
+  background-color: #f97316;
+  color: white;
+  border: 2px solid #f97316;
 }
+
 
 .btn-primary:hover {
-  background: #0f5fe0;
-  border-color: #0f5fe0;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(30, 115, 255, 0.35);
+  background-color: black;
+  border-color: black;
+  color: white;
 }
 
-/* Secondary CTA: View Our Work */
+/* Transparent button */
 .btn-secondary {
-  background: transparent;
-  color: #ffffff;
-  border: 2px solid #1e73ff;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
 }
 
 .btn-secondary:hover {
-  background: #1e73ff;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(30, 115, 255, 0.25);
+  background-color: transparent;
+  color: white;
+  border-color: black;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  .cta-buttons {
-    flex-direction: column;
-  }
 
-  .btn {
-    width: 100%;
-  }
+
+
+.hero video {
+  display: block;
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+
+.hero__trust {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 0px;
+  font-size: 30px;
+  color: rgb(32, 32, 32);
+  background: rgba(99, 90, 90, 0.1);
+  backdrop-filter: blur(5px);
+  color: rgb(16, 16, 16);
+  padding: 20px;
+}
+
+
+
+
 
 /* ========================
    Heading
@@ -332,7 +367,7 @@ html, body {
 
 
 .about {
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
 .about__container {
@@ -391,6 +426,11 @@ html, body {
 
 .recent_header{
 text-align: center;
+}
+
+.recent_work{
+  background-color: #5c515115;
+  padding: 30px;
 }
 
 
@@ -591,27 +631,18 @@ padding: 0 20px 30px 20px;
 
 .service__items {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;   
-  gap: 2rem;                 
-  min-height: 50vh;   
-  max-width: 1200px;         
-  margin: 0 auto;    
-      
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-
 .service__cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;      
-  text-align: center;
-  max-width: 300px;
-  max-height: 300px;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  
+  justify-self: center;
 }
 
 .service__header{
@@ -623,7 +654,7 @@ padding: 0 20px 30px 20px;
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 10px;
+  
 }
 .service__card-wrapper{
   display: inline-block;          
@@ -640,6 +671,38 @@ padding: 0 20px 30px 20px;
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+
+.whatsapp-float svg {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+.whatsapp-float:hover {
+  background: #1da851;
+  transform: translateY(-3px);
+}
+
+.whatsapp-float span {
+  white-space: nowrap;
 }
 
 
@@ -682,6 +745,10 @@ padding: 0 20px 30px 20px;
   .heading {
     font-size: 26px;
   }
+  .hero__trust{
+    font-size: 26px;
+    gap: 10px;
+  }
 
 }
 
@@ -722,6 +789,10 @@ padding: 0 20px 30px 20px;
   .lightbox-img {
     max-width: 95%;
     max-height: 75%;
+  }
+
+  .hero_title{
+    font-size: 60px;
   }
 
  
@@ -840,19 +911,4 @@ padding: 0 20px 30px 20px;
     text-align: center;
   }
 }
-
-
-
-@media (max-width: 1024px) {
-  .service__items {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
-  }
-}
-
-@media (max-width: 600px) {
-  .service__items {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
-    
-
-  }
 }
