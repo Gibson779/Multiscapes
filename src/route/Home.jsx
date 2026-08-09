@@ -65,16 +65,20 @@ export default function Home(){
              </div>
                </section>
 
-              <div className="button-container">
-                <div className="link">
-                <Link to="/contact">
-              <button className="contact_btn">Contact US</button>
-              </Link>
+              <div className="cta-buttons">
 
-                <a href="tel:030438303">
-               <button className="call_btn">Call (num)</button>
-                </a>
-               </div>
+    <Link to="/contact" className="btn-primary">
+      Contact Us
+    </Link>
+
+                <a href="tel:030438303" className="btn-secondary">
+                    Call (num)
+                  </a>
+
+               
+                
+                </div>
+               
                   <a
                     href="https://wa.me/447123456789"
                     className="whatsapp-float"
@@ -82,11 +86,12 @@ export default function Home(){
                     rel="noopener noreferrer"
                     
                   >
+                    
                     <FaWhatsapp />
                     <span>How Can We Help?</span>
                   </a>
 
-               </div>
+               
 
            </>
     )

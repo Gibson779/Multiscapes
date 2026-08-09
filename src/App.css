@@ -8,36 +8,116 @@ html, body {
 ========================== */
 .navbar {
   background: rgb(255, 255, 255);
-  top: 0;
-  left: 0;
   width: 100%;
-  z-index: 1000;
+   z-index: 1000;
+   
+
 }
 
 .navbar__container {
-  max-width: 1200px;
+  max-width: 1400px;
+   z-index: 1001;
   height: 110px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   
-  
 }
 
-.navbar-medium {
-  height: 200px;
+.navbar__menu  {
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+
+.nav-call-btn {
+  margin-left: 1rem;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+.navbar__menu .nav-call-btn {
+  color: white;
+}
+
+.navbar__menu .nav-call-btn:hover{
+  color: white;
+}
+
+/* ==========================
+   MENU (DESKTOP)
+========================== */
+
+.navbar__menu {
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+   align-items: center;
+}
+
+.navbar__menu a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar__menu a:hover {
+  color: black
 }
 
 
-.navbar-small {
-  height: 100px;
+/* ==========================
+   HAMBURGER
+========================== */
+
+.navbar__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+   z-index: 1002;
 }
 
-.call_nav{
-  
+.navbar__hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #374151;
+  transition: all 0.3s ease;
 }
+
+/* ==========================
+   HAMBURGER ANIMATION
+========================== */
+
+.navbar__hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar__hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar__hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+.footer__line{
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 80%;
+  margin: 20px auto;
+}
+
 
 /* ==========================
    Hero
@@ -45,6 +125,8 @@ html, body {
 .hero_title{
   font-size: 100px;
   margin: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 
@@ -100,7 +182,7 @@ html, body {
 
 .hero__subtitle {
   max-width: 650px;
-  margin: 25px auto;
+  margin: 25px 20px;
   font-size: 1.2rem;
   line-height: 1.6;
 }
@@ -159,12 +241,6 @@ html, body {
 }
 
 
-
-
-.hero video {
-  display: block;
-}
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -185,7 +261,31 @@ html, body {
 }
 
 
+/* ----------------------------------
+   BASE GALLERY GRID
+---------------------------------- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  
+}
 
+.gallery-img {
+  width: 100%;            
+  max-width: 100%;        
+  height: 550px;          
+  object-fit: cover;      
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
 
 
 /* ========================
@@ -213,110 +313,13 @@ html, body {
 }
 
 .navbar__logo img {
+  
   padding-top: 2px;
   height:  80px;
   width: 80px;
   
 }
 
-
-/* ==========================
-   MENU (DESKTOP)
-========================== */
-
-.navbar__menu {
-  display: flex;
-  gap: 2rem;
-  font-size: 20px;
-}
-
-.navbar__menu a {
-  text-decoration: none;
-  color: #5c898b;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.navbar__menu a:hover {
-  color: black
-}
-
-.navbar__menu.open{
-   position: fixed;   
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-/* ==========================
-   HAMBURGER
-========================== */
-
-.navbar__hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.navbar__hamburger span {
-  width: 25px;
-  height: 3px;
-  background: #374151;
-  transition: all 0.3s ease;
-}
-
-/* ==========================
-   HAMBURGER ANIMATION
-========================== */
-
-.navbar__hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.navbar__hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.navbar__hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
-}
-
-
-.footer__line{
-  border: none;
-  border-top: 1px solid #ccc;
-  width: 80%;
-  margin: 20px auto;
-}
-
-/* ----------------------------------
-   BASE GALLERY GRID
----------------------------------- */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 20px;
-  
-}
-
-.gallery-img {
-  width: 100%;            
-  max-width: 100%;        
-  height: 550px;          
-  object-fit: cover;      
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.gallery-img:hover {
-  transform: scale(1.05);
-}
 
 /* ----------------------------------
    LIGHTBOX
@@ -364,7 +367,6 @@ html, body {
 /* ==========================
    Home / About Section
 ========================== */
-
 
 .about {
   padding: 50px 20px;
@@ -715,7 +717,9 @@ padding: 0 20px 30px 20px;
 @media (max-width: 768px) {
   .navbar__menu {
     position: absolute;
-    right: 0;
+    left: 0;
+    top: -200px;
+    display: flex;
     width: 100%;
     background: rgb(255, 255, 255);
     flex-direction: column;
@@ -724,14 +728,21 @@ padding: 0 20px 30px 20px;
     padding: 2rem 0;
     transform: translateY(-120%);
     transition: transform 0.3s ease;
+    z-index: 1000;
+
+
   }
   .navbar__menu a{
-    color: #000000;
+    color: white;
 
   }
   
   .navbar__menu.open {
     transform: translateY(0);
+    top: 0px;
+    
+    background-color: rgba(0, 0, 0, 0.432);
+    min-height: calc(100vh - 30px);
   }
 
   .navbar__hamburger {

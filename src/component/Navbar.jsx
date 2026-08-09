@@ -11,43 +11,55 @@ export default function Navbar({height, showHomeImage}) {
   return (
 
     <>
+<div className="navbar">
+  <div className="navbar__container">
 
-    <div className={`navbar `}>
-    
-    
-      <div className="navbar__container">
+    {/* Logo */}
+    <Link to="/" className="navbar__logo" onClick={closeMenu}>
+      <img src="/images/logoNew.jpg" alt="Company logo" />
+    </Link>
 
-        {/* Logo / Brand */}
-        <Link to="/" className="navbar__logo" onClick={closeMenu}>
-          <img  src="/images/logoNew.jpg" alt="" />
-        </Link>
-        <h1 className="heading"></h1>
+    {/* Navigation */}
+    <nav className={`navbar__menu ${menuOpen ? "open" : ""}`}>
+      <Link to="/" onClick={closeMenu}>
+        Home
+      </Link>
 
-       
+      <Link to="/services" onClick={closeMenu}>
+        Services
+      </Link>
 
-        {/* Navigation Links */}
-        <nav className={`navbar__menu ${menuOpen ? "open" : ""}`}>
-          <Link to="/" onClick={closeMenu}>Home</Link>
-          <Link to="/services" onClick={closeMenu}>Services</Link>
-           <Link to="/gallery" onClick={closeMenu}>Gallery</Link>
-             <Link to="/contact" onClick={closeMenu}>Contact</Link>
-              <a className="call_nav" href="tel:030438303" onClick={closeMenu}>Call - 0145323456</a>
-        </nav>
+      <Link to="/gallery" onClick={closeMenu}>
+        Gallery
+      </Link>
 
-      
-        {/* Hamburger */}
-        <button
-          className={`navbar__hamburger ${menuOpen ? "open" : ""}`}
-          onClick={toggleMenu}
-          aria-label="Toggle navigation"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+      <Link to="/contact" onClick={closeMenu}>
+        Contact
+      </Link>
 
-      </div>
-    </div>
+      <a
+        href="tel:030438303"
+        className="btn-primary nav-call-btn"
+        onClick={closeMenu}
+      >
+        📞 Call Now
+      </a>
+    </nav>
+
+    {/* Hamburger */}
+    <button
+      className={`navbar__hamburger ${menuOpen ? "open" : ""}`}
+      onClick={toggleMenu}
+      aria-label="Toggle navigation"
+      aria-expanded={menuOpen}
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</div>
 
     </>
   );
