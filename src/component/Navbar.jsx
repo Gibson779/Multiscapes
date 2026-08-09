@@ -42,7 +42,7 @@ export default function Navbar({height, showHomeImage}) {
         className="btn-primary nav-call-btn"
         onClick={closeMenu}
       >
-        📞 Call Now
+         Call: 06848586654
       </a>
     </nav>
 

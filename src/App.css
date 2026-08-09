@@ -370,6 +370,8 @@ html, body {
 
 .about {
   padding: 50px 20px;
+  background: rgba(99, 90, 90, 0.1);
+  
 }
 
 .about__container {
@@ -411,6 +413,7 @@ html, body {
   align-items: center;
   flex-direction: column;
   padding: 0 20px 60px 20px;
+  background: rgba(99, 90, 90, 0.1);
 
 }
 
@@ -431,7 +434,7 @@ text-align: center;
 }
 
 .recent_work{
-  background-color: #5c515115;
+  
   padding: 30px;
 }
 
@@ -649,7 +652,7 @@ padding: 0 20px 30px 20px;
 
 .service__header{
   text-align: center;
-  color: #47693b;
+  color: black;
   
 }
 .services__image {
