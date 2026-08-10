@@ -69,7 +69,7 @@ html, body {
 }
 
 .navbar__menu a:hover {
-  color: black
+  color: #879466;
 }
 
 
@@ -143,6 +143,7 @@ html, body {
 
   text-align: center;
   color: white;
+  
 }
 
 .hero {
@@ -169,6 +170,7 @@ html, body {
   inset: 0;
   background: rgba(0,0,0,0.35);
   z-index: 2;
+  
 }
 
 .hero__tag {
@@ -198,7 +200,7 @@ html, body {
 .cta-buttons a {
   text-decoration: none;
   padding: 0.9rem 2rem;
-  border-radius: 30px;
+  border-radius: 10px;
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -215,9 +217,9 @@ html, body {
 
 /* Orange button */
 .btn-primary {
-  background-color: #f97316;
+  background-color: #248CA9;
   color: white;
-  border: 2px solid #f97316;
+  border: 2px solid #248CA9;
 }
 
 
@@ -229,9 +231,9 @@ html, body {
 
 /* Transparent button */
 .btn-secondary {
-  background-color: black;
+  background-color: #879466;
   color: white;
-  border: 2px solid black;
+  border: 2px solid #879466;
 }
 
 .btn-secondary:hover {
@@ -670,6 +672,12 @@ padding: 0 20px 30px 20px;
   transform: translateY(-7px);   
 }
 
+.service__link{
+  text-decoration: none;
+  color: inherit;
+  
+}
+
 
 .contact__container{
   max-width: 800px;
@@ -807,6 +815,10 @@ padding: 0 20px 30px 20px;
 
   .hero_title{
     font-size: 60px;
+  }
+
+  .hero__content{
+    height: 550px;
   }
 
  

@@ -5,6 +5,7 @@ export default [
         image: "../images/Fencing job.jpg",
         date: "",
         text: "",
+        link: "/services"
     },
     {
 

@@ -163,7 +163,7 @@ const styles = {
 
   submitButton: {
     padding: '10px 20px',
-    backgroundColor: 'rgba(110, 162, 205, 0.73)',
+    backgroundColor: 'rgba(57, 97, 129, 0.73)',
     color: '#fff',
     fontSize: '16px',
     border: 'none',
