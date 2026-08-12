@@ -6,11 +6,13 @@ export default function Hero() {
 
   return (
     <section className="hero">
-      <img src="../images/stock2.jpg" alt="HeroImage" className="hero__slider" />
-      <div className="hero__overlay"></div>
 
-        
-      <div className="hero__content">
+
+    <img src="../images/edit.jpg" alt="HeroImage" className="hero__slider" />
+
+    <div className="hero__overlay"></div>
+
+    <div className="hero__content">
 
   <span className="hero__tag">
     
