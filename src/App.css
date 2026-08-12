@@ -149,14 +149,15 @@ html, body {
 .hero {
  
   position: relative;
-  height: 700px;
+  height: 600px;
   overflow: hidden;
   z-index: 1;
   width: 100%;
 }
 
 .hero img{
-   
+  
+
   
 }
 

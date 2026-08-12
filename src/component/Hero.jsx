@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="hero">
 
 
-    <img src="../images/edit.jpg" alt="HeroImage" className="hero__slider" />
+    <img src="../images/New.jpg" alt="HeroImage" className="hero__slider" />
 
     <div className="hero__overlay"></div>
 
