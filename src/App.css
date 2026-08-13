@@ -136,19 +136,6 @@ html, body {
   margin: 20px auto;
 }
 
-.hero__trust hr {
-  height: 25px;
-  border: 0;
-  border-left: 1px solid #ccc;
-  margin: 0;
-}
-
-.favicon__img{
-  width: 50px;
-  height: auto;
-  object-fit: contain;  
-
-}
 
 
 .hero__content {
@@ -178,8 +165,6 @@ html, body {
   object-fit: cover;
 }
 
-
-
 .hero__line{
   border: none;
   border-top: 1px solid #ccc;
@@ -195,7 +180,6 @@ html, body {
   z-index: 2;
   
 }
-
 
 .hero__tag {
   display: inline-block;
@@ -280,14 +264,6 @@ html, body {
   color: rgb(16, 16, 16);
   padding: 20px;
 }
-
-.trust__item {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  white-space: nowrap;
-}
-
 
 
 /* ----------------------------------
@@ -396,6 +372,63 @@ html, body {
 /* ==========================
    Home / About Section
 ========================== */
+.certification {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero__trust {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-sizing: border-box;
+  padding-top: 40px;
+}
+
+.favicon__img {
+  width: 80px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.hero__trust span {
+  font-size: clamp(11px, 1.5vw, 18px);
+  white-space: nowrap;
+}
+
+.hero__trust hr {
+  flex: 1;
+  min-width: 10px;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .hero__trust {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero__trust hr {
+    width: 60px;
+    flex: none;
+  }
+
+  .favicon__img {
+    width: 80px;
+    height: 50px;
+  }
+
+  .hero__trust span {
+    font-size: 14px;
+  }
+}
 
 .about {
   padding: 30px 20px;
@@ -794,11 +827,6 @@ padding: 0 20px 30px 20px;
   .heading {
     font-size: 26px;
   }
-  .hero__trust{
-    font-size: 26px;
-    gap: 10px;
-  }
-
 }
 
 
@@ -854,21 +882,6 @@ padding: 0 20px 30px 20px;
     object-position: center center;
  }
 
- .favicon__img{
-  width: 50px;
-  height: auto;
- }
- .hero__trust{
-  font-size: 20px;
- }
-
-
-@media (max-width: 500px) {
-  .favicon__img{
-    width: 30px;
-    height: auto;
-  }
-}
 
 
 
