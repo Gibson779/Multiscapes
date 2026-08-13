@@ -8,17 +8,15 @@ export default function Hero() {
     <section className="hero">
 
 
-    <img src="../images/stock.jpg" alt="HeroImage" className="hero__slider" />
+    <img src="../images/home.jpg" alt="HeroImage" className="hero__image" />
 
     <div className="hero__overlay"></div>
 
     <div className="hero__content">
+      
 
-  <span className="hero__tag">
-    
-  </span>
 
-  <h1 className="hero_title">
+  <h1 className="hero__title">
     Multiscapes
 
   </h1>

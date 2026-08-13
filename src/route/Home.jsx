@@ -13,13 +13,17 @@ export default function Home(){
        <span>✓ Free Site Visits</span>
        <span>✓ Quality Guaranteed</span>
        <span>✓ Fully Insured</span>
+       
      </div>
 
       
        </section>
+       
 
      
        <section className="about">
+        <hr className="hero__line" />
+
        <div className="about__container">
 
         <div className="about__text">
