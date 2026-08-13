@@ -6,18 +6,20 @@ import { Link } from "react-router-dom";
 export default function Home(){
     return(
         <>
-
-        <section className="certification">
-       
-      <div className="hero__trust">
-       <span>✓ Free Site Visits</span>
-       <span>✓ Quality Guaranteed</span>
-       <span>✓ Fully Insured</span>
-       
-     </div>
-
-      
-       </section>
+<section className="certification">
+  <div className="hero__trust">
+     
+     <img className="favicon__img" src="../images/pound.png" alt="location.png" />
+    <span>Free Quotation</span>
+    <hr />
+     <img className="favicon__img" src="../images/checked.png" alt="location.png" />
+    <span>Quality Guaranteed</span>
+    <hr />
+    <img className="favicon__img" src="../images/location.png" alt="location.png" />
+    <span>Local & Reliable</span>
+  </div>
+  
+</section>
        
 
      

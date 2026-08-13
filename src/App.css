@@ -134,10 +134,21 @@ html, body {
   border-top: 1px solid #ccc;
   width: 80%;
   margin: 20px auto;
-  
-
 }
 
+.hero__trust hr {
+  height: 25px;
+  border: 0;
+  border-left: 1px solid #ccc;
+  margin: 0;
+}
+
+.favicon__img{
+  width: 50px;
+  height: auto;
+  object-fit: contain;  
+
+}
 
 
 .hero__content {
@@ -154,7 +165,6 @@ html, body {
 }
 
 .hero {
- 
   position: relative;
   height: 700px;
   overflow: hidden;
@@ -168,11 +178,7 @@ html, body {
   object-fit: cover;
 }
 
-@media (max-width: 600px) {
-  .hero__image {
-    object-position: center center;
-  }
-}
+
 
 .hero__line{
   border: none;
@@ -261,16 +267,11 @@ html, body {
 }
 
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
 
 .hero__trust {
   display: flex;
   justify-content: center;
-  gap: 200px;
+  gap: 50px;
   margin-top: 0px;
   font-size: 30px;
   color: rgb(32, 32, 32);
@@ -279,6 +280,14 @@ html, body {
   color: rgb(16, 16, 16);
   padding: 20px;
 }
+
+.trust__item {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  white-space: nowrap;
+}
+
 
 
 /* ----------------------------------
@@ -707,15 +716,15 @@ padding: 0 20px 30px 20px;
   position: fixed;
   bottom: 25px;
   right: 25px;
-  background: #25D366;
+  background: #19a04a;
   color: #fff;
-  border-radius: 50px;
-  padding: 0.8rem 1.2rem;
+  border-radius: 40px;
+  padding: 10px 1.2rem;
   display: flex;
   align-items: center;
   gap: 0.6rem;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease;
@@ -724,7 +733,7 @@ padding: 0 20px 30px 20px;
 
 
 .whatsapp-float svg {
-  font-size: 2rem;
+  font-size: 20px;
   flex-shrink: 0;
 }
 .whatsapp-float:hover {
@@ -806,6 +815,8 @@ padding: 0 20px 30px 20px;
 
 }
 
+
+
 @media (max-width: 600px) {
   .gallery {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -839,7 +850,26 @@ padding: 0 20px 30px 20px;
     height: 550px;
   }
 
- 
+ .hero__image {
+    object-position: center center;
+ }
+
+ .favicon__img{
+  width: 50px;
+  height: auto;
+ }
+ .hero__trust{
+  font-size: 20px;
+ }
+
+
+@media (max-width: 500px) {
+  .favicon__img{
+    width: 30px;
+    height: auto;
+  }
+}
+
 
 
 @media (max-width: 400px) {
@@ -948,6 +978,8 @@ padding: 0 20px 30px 20px;
     padding: 30px 15px;
   }
 }
+
+
 
 @media (max-width: 768px) {
   .services__container {
