@@ -78,7 +78,7 @@ export default function Home(){
     </Link>
 
                 <a href="tel:030438303" className="btn-secondary">
-                    Call (num)
+                    Call 0161 312 5399
                   </a>
 
                

@@ -38,11 +38,11 @@ export default function Navbar({height, showHomeImage}) {
       </Link>
 
       <a
-        href="tel:030438303"
+        href="tel:0161 312 5399"
         className="btn-primary nav-call-btn"
         onClick={closeMenu}
       >
-         Call: 06848586654
+         Call: 0161 312 5399
       </a>
     </nav>
 

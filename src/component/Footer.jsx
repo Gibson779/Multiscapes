@@ -9,6 +9,8 @@ export default function Footer(){
 
     <footer className="footer__bottom">
 
+     
+
       <div className="footer__container">
 
         <img 

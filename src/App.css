@@ -33,12 +33,12 @@ html, body {
 }
 
 .nav-call-btn {
-  margin-left: 1rem;
+  
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  border-radius: 10px;
-  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  padding: 0.3rem 1rem;
   color: white;
 }
 
@@ -64,8 +64,9 @@ html, body {
 .navbar__menu a {
   text-decoration: none;
   color: #000000;
-  font-weight: 500;
+  font-weight: 400;
   transition: color 0.2s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
 .navbar__menu a:hover {
@@ -245,7 +246,7 @@ html, body {
 }
 
 .btn-secondary:hover {
-  background-color: transparent;
+  background-color: black;
   color: white;
   border-color: black;
 }
